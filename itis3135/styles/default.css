@@ -19,6 +19,8 @@ header {
 footer {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    font-size: medium;
+    font-weight: normal;
     background-color: #e1eedd;
     margin-top: 50px;
     margin-bottom: 50px;
