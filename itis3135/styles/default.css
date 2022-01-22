@@ -1,19 +1,35 @@
 body
 {
-    font-family: fantasy;
-    color: blue;
-    background-color: beige;
+    font-family: serif;
+    color: #183a1d;
+    background-color: #fefbe9;
 }
 
 header , footer
 {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    background-color: beige;
+    background-color: #fefbe9;
 }
 
 h1, h2, h3
 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
+}
+
+.emphasized
+{
+    font-style: italic;
+    text-align: center;
+}
+
+.bolded
+{
+    font-weight: bold;
+}
+
+figure 
+{
+    align-content: center;
 }
