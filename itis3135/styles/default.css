@@ -8,7 +8,9 @@ body
 header , footer
 {
     font-family: 'Courier New', Courier, monospace;
-    font-size: large;
+    font-size: larger;
+    font-weight: bold;
+    padding: auto;
     text-align: center;
     background-color: #e1eedd;
 }
