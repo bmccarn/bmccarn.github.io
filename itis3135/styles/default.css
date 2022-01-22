@@ -1,0 +1,13 @@
+body
+{
+    font-family: fantasy;
+    color: blue;
+    background-color: beige;
+}
+
+header
+{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: beige;
+}
