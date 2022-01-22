@@ -8,6 +8,7 @@ body
 header , footer
 {
     font-family: 'Courier New', Courier, monospace;
+    font-size: large;
     text-align: center;
     background-color: #e1eedd;
 }
