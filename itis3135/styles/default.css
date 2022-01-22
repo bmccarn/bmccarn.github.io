@@ -1,13 +1,11 @@
-body
-{
+body {
     font-family: serif;
     font-size: large;
     color: #183a1d;
     background-color: #fefbe9;
 }
 
-header , footer
-{
+header {
     font-family: 'Courier New', Courier, monospace;
     font-size: larger;
     font-weight: bold;
@@ -16,24 +14,28 @@ header , footer
     background-color: #e1eedd;
 }
 
-h1, h2, h3
-{
+footer {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #e1eedd;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h1, h2, h3 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
 }
 
-.emphasized
-{
+.emphasized {
     font-style: italic;
     text-align: center;
 }
 
-.bolded
-{
+.bolded {
     font-weight: bold;
 }
 
-figure 
-{
+figure {
     text-align: center;
 }
