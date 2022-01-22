@@ -3,6 +3,8 @@ body {
     font-size: large;
     color: #183a1d;
     background-color: #fefbe9;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 header {
