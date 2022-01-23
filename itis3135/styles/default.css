@@ -18,7 +18,6 @@ header {
 nav
 {
     text-align: center;
-    font-size: 150%;
 }
 
 footer {
@@ -47,5 +46,10 @@ h1, h2, h3 {
 
 figure {
     text-align: center;
+}
+
+.larger-font
+{
+    font-size: 150%;
 }
 
