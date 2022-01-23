@@ -42,3 +42,9 @@ h1, h2, h3 {
 figure {
     text-align: center;
 }
+
+nav
+{
+    text-align: center;
+    font-size: 150%;
+}
