@@ -15,10 +15,16 @@ header {
     background-color: #e1eedd;
 }
 
+nav
+{
+    text-align: center;
+    font-size: 150%;
+}
+
 footer {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    font-size: medium;
+    font-size: 70%;
     font-weight: normal;
     background-color: #e1eedd;
     margin-top: 50px;
@@ -43,8 +49,3 @@ figure {
     text-align: center;
 }
 
-nav
-{
-    text-align: center;
-    font-size: 150%;
-}
