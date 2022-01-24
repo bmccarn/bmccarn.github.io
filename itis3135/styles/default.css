@@ -53,3 +53,8 @@ figure {
     font-size: 150%;
 }
 
+.no-underline
+{
+    text-decoration: none;
+}
+
