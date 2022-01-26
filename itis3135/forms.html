@@ -26,25 +26,60 @@
     </header>
     <main>
         <h2>Activity #3 - HTML Form</h2>
-        
-        <form>
+
+        <p>Input your personal information:</p>
+        <form action="#">
 
             <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname"><br>
+            <input type="text" id="fname" name="fname" required><br>
             <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname"><br> 
+            <input type="text" id="lname" name="lname" required><br>
             <label for="phone">Phone number:</label><br>
-            <input type="text" id="phone" name="phone"><br>
+            <input type="text" id="phone" name="phone" required><br>
             <label for="email">Email address:</label><br>
-            <input type="text" id="email" name="email"><br>
+            <input type="text" id="email" name="email" required><br>
+
+
+            <p>Choose your favorite operating system:</p>
+
+
+
+            <input type="radio" id="windows" name="fav_operating_system" value="windows">
+            <label for="windows">Windows</label><br>
+            <input type="radio" id="macOS" name="fav_operating_system" value="macOS">
+            <label for="macOS">MacOS</label><br>
+            <input type="radio" id="linux" name="fav_operating_system" value="linux">
+            <label for="linux">Linux</label><br>
+
+
+            <p>Choose your favorite web browser:</p>
+
+            <input type="checkbox" id="safari" name="fav_web_browser" value="safari">
+            <label for="safari">Safari</label><br>
+            <input type="checkbox" id="chrome" name="fav_web_browser" value="chrome">
+            <label for="chrome">Chrome</label><br>
+            <input type="checkbox" id="firefox" name="fav_web_browser" value="firefox">
+            <label for="firefox">Firefox</label><br>
+
+
+            <label for="fav_ide">Choose your favorite IDE:</label>
+            <select name="fav_ide" id="fav_ide">
+                <option value="netbeans">NetBeans</option>
+                <option value="eclipse">Eclipse</option>
+                <option value="intellij">IntelliJ</option>
+                <option value="pycharm">PyCharm</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
         </form>
     </main>
     <footer>
         <br />
         <nav>
-            <a href="http://webpages.uncc.edu/bmccarn2/" target="_blank">UNCC Webpage</a> 
+            <a href="http://webpages.uncc.edu/bmccarn2/" target="_blank">UNCC Webpage</a>
             ||
-            <a href="https://github.com/bmccarn" target="_blank">Github</a> 
+            <a href="https://github.com/bmccarn" target="_blank">Github</a>
             ||
             <a href="https://bmccarn.github.io/" target="_blank">Github.io</a>
             ||
