@@ -15,8 +15,7 @@ header {
     background-color: #e1eedd;
 }
 
-nav
-{
+nav {
     text-align: center;
 }
 
@@ -48,18 +47,16 @@ figure {
     text-align: center;
 }
 
-.larger-font
-{
+.larger-font {
     font-size: 150%;
 }
 
-.no-underline
-{
+.no-underline {
     text-decoration: none;
 }
 
 table, th, td {
-    
+
     text-align: center;
     border: 1px solid black;
     border-collapse: collapse;
@@ -74,10 +71,16 @@ th {
     margin-right: auto;
 }
 
+ol {
+    display: table;
+    margin: 0 auto;
+}
+
 th, td {
     padding: 15px;
     text-align: left;
-  }
+}
 
-  tr:nth-child(even) {background-color: #f2f2f2;}
- 
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
