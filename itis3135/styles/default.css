@@ -90,14 +90,13 @@ tr:nth-child(even) {
     font-family: sans-serif;
     background-color: #e1eedd;
     border-style: solid;
-    margin-left: 350px;
-    margin-right: 350px;
+    margin-left: 15em;
+    margin-right: 15em;
     padding: 10px;
 }
 
 .button {
     background-color: #183a1d;
-    border: none;
     border-radius: 7px;
     color: white;
     padding: 10px 25px;
