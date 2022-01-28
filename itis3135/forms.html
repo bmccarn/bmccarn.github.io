@@ -27,47 +27,51 @@
     <main>
         <h2>Activity #3 - HTML Form</h2>
 
-        <p>Input your personal information:</p>
+
         <form action="#">
+            <div class="form">
 
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" size="20" placeholder="First Name" required><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" size="20" placeholder="Last Name" required><br>
-            <label for="phone">Phone number:</label><br>
-            <input type="text" id="phone" name="phone" size="15" placeholder="012-345-6789" required><br>
-            <label for="email">Email address:</label><br>
-            <input type="text" id="email" name="email" size="30" placeholder="johndoe@gmail.com" required><br>
+                <p>Input your personal information:</p>
 
-            <p>Choose your favorite operating system:</p>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" size="20" placeholder="First Name" required><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" size="20" placeholder="Last Name" required><br>
+                <label for="phone">Phone number:</label><br>
+                <input type="text" id="phone" name="phone" size="15" placeholder="###-###-####" required><br>
+                <label for="email">Email address:</label><br>
+                <input type="text" id="email" name="email" size="30" placeholder="johndoe@gmail.com" required><br>
 
-            <input type="radio" id="windows" name="fav_operating_system" value="windows">
-            <label for="windows">Windows</label><br>
-            <input type="radio" id="macOS" name="fav_operating_system" value="macOS">
-            <label for="macOS">MacOS</label><br>
-            <input type="radio" id="linux" name="fav_operating_system" value="linux">
-            <label for="linux">Linux</label><br>
+                <p>Choose your favorite operating system:</p>
 
-            <p>Choose your favorite web browser:</p>
+                <input type="radio" id="windows" name="fav_operating_system" value="windows">
+                <label for="windows">Windows</label><br>
+                <input type="radio" id="macOS" name="fav_operating_system" value="macOS">
+                <label for="macOS">MacOS</label><br>
+                <input type="radio" id="linux" name="fav_operating_system" value="linux">
+                <label for="linux">Linux</label><br>
 
-            <input type="checkbox" id="safari" name="fav_web_browser" value="safari">
-            <label for="safari">Safari</label><br>
-            <input type="checkbox" id="chrome" name="fav_web_browser" value="chrome">
-            <label for="chrome">Chrome</label><br>
-            <input type="checkbox" id="firefox" name="fav_web_browser" value="firefox">
-            <label for="firefox">Firefox</label><br>
+                <p>Choose your favorite web browser:</p>
 
-            <br>
-            <label for="fav_ide">Choose your favorite IDE:</label>
-            <select name="fav_ide" id="fav_ide">
-                <option value="netbeans">NetBeans</option>
-                <option value="eclipse">Eclipse</option>
-                <option value="intellij">IntelliJ</option>
-                <option value="pycharm">PyCharm</option>
-            </select>
-            <br><br>
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
+                <input type="checkbox" id="safari" name="fav_web_browser" value="safari">
+                <label for="safari">Safari</label><br>
+                <input type="checkbox" id="chrome" name="fav_web_browser" value="chrome">
+                <label for="chrome">Chrome</label><br>
+                <input type="checkbox" id="firefox" name="fav_web_browser" value="firefox">
+                <label for="firefox">Firefox</label><br>
+
+                <br>
+                <label for="fav_ide">Choose your favorite IDE:</label>
+                <select name="fav_ide" id="fav_ide">
+                    <option value="netbeans">NetBeans</option>
+                    <option value="eclipse">Eclipse</option>
+                    <option value="intellij">IntelliJ</option>
+                    <option value="pycharm">PyCharm</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
         </form>
     </main>
     <footer>

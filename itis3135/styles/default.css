@@ -1,5 +1,5 @@
-body {
-    font-family: serif;
+body, title {
+    font-family: sans-serif;
     font-size: large;
     color: #183a1d;
     background-color: #fefbe9;
@@ -30,7 +30,7 @@ footer {
 }
 
 h1, h2, h3 {
-    font-family: Cambria, Cochin, Georgia, serif;
+    font-family: Cambria, Cochin, Georgia, sans-serif;
     text-align: center;
 }
 
@@ -85,3 +85,13 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
+.form
+{
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #e1eedd;
+    border-style: solid;
+    margin-left: 350px;
+    margin-right: 350px;
+    padding: 10px;
+}
