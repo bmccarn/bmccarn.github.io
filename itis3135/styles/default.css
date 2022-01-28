@@ -15,6 +15,13 @@ header {
     background-color: #e1eedd;
 }
 
+.header img {
+float: left;
+width: 120px;
+height: 120px; 
+}
+
+
 nav {
     text-align: center;
 }
