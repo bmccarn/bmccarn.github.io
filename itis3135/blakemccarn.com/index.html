@@ -7,34 +7,67 @@
     <style>
         header {
             background-color: #2b6777;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: large;
+            font-weight: bold;
+            text-align: center;
         }
+
         body {
             background-color: #c8d8e4;
 
         }
+
         footer {
             background-color: #2b6777;
         }
 
+        header {
+            text-align: center;
+            display: flex;
+        }
+
+        .spacer {
+            display: none
+        }
+
+        .logo, .spacer {
+            display: block;
+            width: 278px;
+            flex: 0 0 auto;
+        }
+
+        .heading {
+            flex: 1 1 auto;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        
-        <img src="/itis3135/images/bronze_meerkat_logo_black.png" alt="Company logo" style="width: 100px; height: 100px;">
-        <h1>McCarn Consulting LLC.</h1>
+        <div class="logo">
+            <img src="../images/mccarn_consulting_logo_2.png" alt="Company logo"
+                style="width: 150px; height: 140px; padding-left: 10px;">         
+        </div>
+        <div class="heading">
+            <h1>McCarn Consulting LLC.</h1>
+            <h2>Ready for the future.</h2>
+        </div>
+        <div class="spacer">
+
+        </div>
+        </div>
     </header>
     <main>
         <h2>Homepage</h2>
-        
+
     </main>
     <footer>
         <br />
-       
+
         <br />
         You envision it, we implement it. &copy;2022.
-        
+
     </footer>
 </body>
 
