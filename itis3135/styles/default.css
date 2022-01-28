@@ -90,8 +90,8 @@ tr:nth-child(even) {
     font-family: sans-serif;
     background-color: #e1eedd;
     border-style: solid;
-    margin-left: 15em;
-    margin-right: 15em;
+    margin-left: 30%;
+    margin-right: 30%;
     padding: 10px;
 }
 
