@@ -5,8 +5,8 @@ body, title {
     background-color: #fefbe9;
     margin-left: 150px;
     margin-right: 150px;
-    
-}   
+
+}
 
 header {
     font-family: 'Courier New', Courier, monospace;
@@ -14,12 +14,12 @@ header {
     font-weight: bold;
     text-align: center;
     background-color: #e1eedd;
-    
+
 }
 
 nav {
     text-align: center;
-    
+
 }
 
 footer {
@@ -30,13 +30,13 @@ footer {
     background-color: #e1eedd;
     margin-top: 50px;
     margin-bottom: 50px;
-    
+
 }
 
 h1, h2, h3 {
     font-family: Cambria, Cochin, Georgia, sans-serif;
     text-align: center;
-  
+
 }
 
 .emphasized {
@@ -113,9 +113,8 @@ tr:nth-child(odd) {
 
 }
 
-a:link, a:visited,  a:hover, a:active
-{
-    color: #183a1d;  
+a:link, a:visited, a:hover, a:active {
+    color: #183a1d;
 }
 
 .list-margin {
