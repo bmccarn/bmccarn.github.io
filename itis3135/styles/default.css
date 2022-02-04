@@ -113,7 +113,7 @@ tr:nth-child(odd) {
 
 }
 
-a:link, a:visited, a:hover, a:active {
+a:link, a:visited, a:active {
     color: #183a1d;
 }
 
@@ -124,4 +124,8 @@ a:link, a:visited, a:hover, a:active {
 
 .center-text {
     text-align: center;
+}
+
+a:hover {
+    color: white;
 }
