@@ -127,5 +127,6 @@ a:link, a:visited, a:active {
 }
 
 a:hover {
-    color: white;
+    color: #e1eedd;
+    background-color: #183a1d;
 }
