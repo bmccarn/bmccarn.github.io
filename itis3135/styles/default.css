@@ -53,11 +53,16 @@ figure {
 }
 
 .larger-font {
-    font-size: 125%;
+    font-size: 115%;
 }
 
 .no-underline {
     text-decoration: none;
+}
+
+.no-underline:hover {
+    color: #183a1d;
+    background-color: #e1eedd;
 }
 
 table, th, td {
@@ -110,7 +115,6 @@ tr:nth-child(odd) {
     font-size: 13px;
     margin: 4px 2px;
     cursor: pointer;
-
 }
 
 a:link, a:visited, a:active {

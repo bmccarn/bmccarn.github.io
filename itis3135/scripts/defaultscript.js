@@ -1,8 +1,10 @@
-function scriptTest() {
+function scriptTest() 
+{
     alert("Hey my script is running!");
 }
 
-function dateAndTime() {
+function dateAndTime() 
+{
     let date = new Date();
     let dayName = getDayName(date.getDay());
     let dayNumber = date.getDate();
@@ -16,25 +18,30 @@ function dateAndTime() {
     document.getElementById("dateOutput").innerHTML = stringTime;  
 }
 
-function getMonthName(month) {
+function getMonthName(month) 
+{
     var arr1 = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
     return arr1[month];
 }
 
-function getDayName(day) {
+function getDayName(day) 
+{
     var arr2 = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
     return arr2[day];
 }
 
-function welcomeMessage() {
+function welcomeMessage() 
+{
     let name = document.getElementById("name").value;
     let feeling = document.getElementById("feeling").value;
     let message = "Welcome to my website, " + name + "! " + "I'm glad you're " + feeling + ". Feel free to look around!";
     document.getElementById("outputMessage").innerHTML = message;
 }
 
-function quoteGenerator() {
-    let quotes = [
+function quoteGenerator() 
+{
+    let quotes = 
+    [
         '"When you have a dream, you’ve got to grab it and never let go." -Carol Burnett', 
         '"There is nothing impossible to they who will try." — Alexander the Great',
         '"The bad news is time flies. The good news is you’re the pilot." — Michael Altshuler',
@@ -51,28 +58,32 @@ function quoteGenerator() {
     document.getElementById("quoteOutput").innerHTML = quotes[randomNumber];
 }
 
-function add() {
+function add() 
+{
     let num1 = document.getElementById("num1").value;
     let num2 = document.getElementById("num2").value;
     let result = num1+num2;
     document.getElementById("result").innerHTML = "The answer is: " + result;
 }
 
-function subtract() {
+function subtract() 
+{
     let num1 = document.getElementById("num1").value;
     let num2 = document.getElementById("num2").value;
     let result = num1-num2;
     document.getElementById("result").innerHTML = "The answer is: " + result;
 }
 
-function multiply() {
+function multiply() 
+{
     let num1 = document.getElementById("num1").value;
     let num2 = document.getElementById("num2").value;
     let result = num1*num2;
     document.getElementById("result").innerHTML = "The answer is: " + result;
 }
 
-function divide() {
+function divide() 
+{
     let num1 = document.getElementById("num1").value;
     let num2 = document.getElementById("num2").value;
     let result = num1/num2;
