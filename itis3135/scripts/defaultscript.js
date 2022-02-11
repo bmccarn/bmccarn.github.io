@@ -10,8 +10,6 @@ function dateAndTime() {
     let year = date.getFullYear();
     let result = "Today is " + time + " on " + dayName + ", " + monthName + " " + year;
     document.getElementById("myH3").innerHTML = result;
-    
-    
 }
 
 function getDayName(day) {
