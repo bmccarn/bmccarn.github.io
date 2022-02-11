@@ -9,7 +9,7 @@ function dateAndTime() {
     let time = date.toLocaleTimeString();
     let year = date.getFullYear();
     let result = "Today is " + time + " on " + dayName + ", " + monthName + " " + year;
-    let myH3 = document.getElementById("myH3").innerHTML = result;
+    document.getElementById("myH3").innerHTML = result;
     
     
 }
