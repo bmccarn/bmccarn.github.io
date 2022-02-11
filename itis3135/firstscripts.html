@@ -47,7 +47,7 @@
 
         <div class="form">
             <p>Let's have some fun with JavaScript!</p>
-            <input type="button" value="Script Test" onclick="scriptTest();">
+            <input class="button" type="button" value="Script Test" onclick="scriptTest();">
             <br>
             <p>
                 Please enter your name:
@@ -58,13 +58,14 @@
                 <input type="text" id="feeling" name="feeling" placeholder="How are you feeling?">
                 <br>
                 <br>
-                <input type="button" onclick="welcomeMessage();" value="Submit">
+                <input class="button" type="button" onclick="welcomeMessage();" value="Submit">
             </p>
             <p id="outputMessage"></p>
             <p>
-                <input type="button" onclick="quoteGenerator();" value="Click me for an inspirational quote!">
+                <input class="button" type="button" onclick="quoteGenerator();" value="Click me for an inspirational quote!">
             </p>
             <p id="quoteOutput"></p>
+            <br>
             <p>Let's do some math!</p>
             Enter your first number:
             <input type="text" id="num1" name="num1" placeholder="Enter a number">
@@ -73,10 +74,11 @@
             Enter your second number:
             <input type="text" id="num2" name="num2" placeholder="Enter a number">
             <br>
-            <input type="button" onclick="add();" value="Add">
-            <input type="button" onclick="subtract();" value="Subtract">
-            <input type="button" onclick="multiply();" value="Multiply">
-            <input type="button" onclick="divide();" value="Divide">
+            <br>
+            <input class="button" type="button" onclick="add();" value="Add">
+            <input class="button" type="button" onclick="subtract();" value="Subtract">
+            <input class="button" type="button" onclick="multiply();" value="Multiply">
+            <input class="button" type="button" onclick="divide();" value="Divide">
             <br>
             <p id="result"></p>
 

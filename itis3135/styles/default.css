@@ -104,10 +104,10 @@ tr:nth-child(odd) {
     background-color: #183a1d;
     border-radius: 7px;
     color: white;
-    padding: 10px 25px;
+    padding: 5px 15px;
     text-align: center;
     display: inline-block;
-    font-size: 16px;
+    font-size: 13px;
     margin: 4px 2px;
     cursor: pointer;
 
