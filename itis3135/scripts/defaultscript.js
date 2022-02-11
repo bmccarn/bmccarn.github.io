@@ -2,6 +2,30 @@ function scriptTest() {
     alert("Hey my script is running!");
 }
 
+function dateAndTime() {
+    let date = new Date();
+    let dayName = getDayName(date.getDay());
+    let dayNumber = date.getDate();
+    let monthName = getMonthName(date.getMonth());
+    let year = date.getFullYear();
+    let time = date.toLocaleTimeString();
+    let stringTime = "Today is " + time + " on " + dayName + ", " + dayNumber + " " + monthName + ", " + year;
+    var intervalId = window.setInterval(function(){
+        dateAndTime();
+      }, 1000);
+    document.getElementById("dateOutput").innerHTML = stringTime;  
+}
+
+function getMonthName(month) {
+    var arr1 = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+    return arr1[month];
+}
+
+function getDayName(day) {
+    var arr2 = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+    return arr2[day];
+}
+
 function welcomeMessage() {
     let name = document.getElementById("name").value;
     let feeling = document.getElementById("feeling").value;
