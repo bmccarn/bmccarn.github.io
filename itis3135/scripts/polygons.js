@@ -38,7 +38,7 @@ function polygonCalculator() {
             break;
 
         case 8:
-            alert("This is called a octagon!");
+            alert("This is called an octagon!");
             break;
 
         case 9:
