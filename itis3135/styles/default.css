@@ -121,6 +121,7 @@ tr:nth-child(odd) {
 
 a:link, a:visited, a:active {
     color: #183a1d;
+    text-decoration: none;
 }
 
 .list-margin {
