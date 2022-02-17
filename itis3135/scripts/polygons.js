@@ -1,19 +1,19 @@
-function userInput() {
-    let numSides = parseFloat(prompt("The Bronze Meerkat would like you to enter a number 1-10 in order to see the corresponding polygon!"));
-    return numSides;
-}
+window.onload = polygonCalculator();
 
-function polygonCalculator(numSides) {
 
-   // let polygon = null;
+function polygonCalculator() {
 
-    let roundedSides = Math.round(Math.abs(numSides));
+    let userInput = parseFloat(prompt("The Bronze Meerkat would like you to enter a number 1-10 in order to see the corresponding polygon!"));
 
-    switch (roundedSides) {
+    let numSides = Math.round(Math.abs(userInput));
+
+    //let polygon;
+
+    switch (numSides) {
         case 1:
             polygon = "This is called a monogon!";
             break;
-        
+
         case 2:
             polygon = "This is called a bigon!";
             break;
@@ -51,10 +51,10 @@ function polygonCalculator(numSides) {
             break;
 
         default:
-            "Input Error: Please enter a number 1-10.";
-            userInput();
+            polygon = "Input Error: Please enter a number 1-10.";
+            polygonCalculator();
             break;
     }
 
-    return polygon;
+    alert(polygon);
 }
