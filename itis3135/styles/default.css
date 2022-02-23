@@ -41,6 +41,11 @@ h1, h2, h3 {
 
 }
 
+header nav {
+    
+    font-size: 115%;
+}
+
 .emphasized {
     font-style: italic;
     text-align: center;
@@ -52,10 +57,6 @@ h1, h2, h3 {
 
 figure {
     text-align: center;
-}
-
-.larger-font {
-    font-size: 115%;
 }
 
 .no-underline {
