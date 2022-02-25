@@ -188,7 +188,7 @@ a:hover {
   }
   
   .calculator__display {
-  background-color: grey;
+  background-color: darkgray;
   color: #fff;
   font-size: 5em;
   padding: 0.5em 0.75em;
@@ -230,7 +230,7 @@ a:hover {
   }
   
   .key--equal {
-  background-image: linear-gradient(to bottom, pink, pink);
+  background-image: linear-gradient(to bottom, orange, orange);
   grid-column: -2;
   grid-row: 2 / span 4;
   }
