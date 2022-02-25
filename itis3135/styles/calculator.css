@@ -139,12 +139,10 @@ a:hover {
     background-color: #183a1d;
 }
 
-/*NOTE: You don't need to mess around with 
-//CSS to follow the tutorial. Focus on the 
-//JavaScript instead!
-//=========================
 
-*/
+/* everything below here */
+
+
 html {
   box-sizing: border-box;
 }
@@ -327,4 +325,3 @@ body {
   grid-column: -2;
   grid-row: 2 / span 4;
 }
-
