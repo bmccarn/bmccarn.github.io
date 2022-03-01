@@ -1,0 +1,2 @@
+let person = [];
+let salaries = [];
