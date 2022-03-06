@@ -12,23 +12,20 @@ function addSalary() {
     let input = parseFloat(document.getElementById("salary").value);
     let name = document.getElementById("employee_name").value;
 
-    if (input === "") 
-    {
+    if (input === "" || isNaN(input)) {
         alert("Invalid Entry - Please enter a number");
-        enteredSalary = ""; 
-        document.getElementById("employee_name").focus(); 
+        enteredSalary = "";
+        document.getElementById("employee_name").focus();
     }
-    else 
-    {
-        
+    else {
+
         input = parseFloat(input);
-        
         person.push(name);
         salaries.push(input);
         document.getElementById("salary").value = "";
         document.getElementById("employee_name").focus();
     }
-    
+
 }
 
 function displayResults() {
@@ -42,27 +39,22 @@ function displayResults() {
     }
 
     average = (total / salaries.length);
-    alert("The average is $" + average);
 
-    
-    for ( var i = 0; i < salaries.length; i++) {
-        
+    for (var i = 0; i < salaries.length; i++) {
+
         if (salaries[i] > max) {
-            max = salaries[i]; 
-            highestPaid = person[i]; 
+            max = salaries[i];
+            highestPaid = person[i];
         }
     }
 
-    
-    document.getElementById("results").innerHTML = "Average salary is $" + average + ". The highest salary is " + highestPaid + "'s, at $" + max;
-
+    document.getElementById("results").innerHTML = "Average salary is $" + average + ". " + highestPaid + " is paid the most with a salary of $" + max;
 }
 
 function displaySalary() {
     let output = '<table class="center"<tr><td>Employee</td><td>Salary</td></tr>'
 
-    for(var i = 0; i < salaries.length; i++)
-    {
+    for (var i = 0; i < salaries.length; i++) {
         output += "<tr><td>" + person[i] + "</td><td>" + salaries[i] + "</td></tr>"
     }
 
