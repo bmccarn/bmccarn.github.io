@@ -23,12 +23,19 @@
             text-align: center;
         }
 
+        .fixed-nav-bar {
+            position: fixed;
+            top: 15px;
+            left: 40%;
+            z-index: 9999;
+            width: 10;
+        }
+
         header {
             font-family: 'Courier New', Courier, monospace;
             font-size: large;
             font-weight: bold;
             text-align: center;
-
         }
 
         footer {
@@ -40,6 +47,8 @@
             margin-bottom: 50px;
 
         }
+  
+        
     </style>
 
     <script type="text/javascript" src="jquery.js"></script>
@@ -47,19 +56,28 @@
 
 <body>
 
-    <div id="header">
-        <li id="site_name">Travelwithblake.com</li>
-        <li onclick="scrollto('home');">HOME</li>
-        <li onclick="scrollto('about');">ABOUT ME</li>
-        <li onclick="scrollto('best_times');">BEST TIMES</li>
-        <li onclick="scrollto('how');">HOW</li>
-        <li onclick="scrollto('why');">WHY</li>
-    </div>
+    
+
+    <header>
+        <nav class="fixed-nav-bar">
+            <a href="#home_link">Home</a>
+            |
+            <a href="#about_link">About Me</a>
+            |
+            <a href="#best_times_link">Best Times</a>
+            |
+            <a href="#how_link">How?</a>
+            |
+            <a href="#why_link">Why?</a>
+        </nav>
+    </header>
 
     <main>
 
         <section id="home">
-            <h2>Home</h2>
+            <a id="home_link">
+                <h2>Home</h2>
+            </a>
             <p>Welcome! This site is going to be about something I've had the chance to do quite a bit and am quite
                 passionate about, traveling!
             </p>
@@ -71,7 +89,9 @@
         </section>
 
         <section id="about">
-            <h2>About Me</h2>
+            <a id="about_link">
+                <h2>About Me</h2>
+            </a>
             <p>In 2015 I joined the military and was lucky
                 enough to be stationed in the United Kingdom for 3 years. During that time I made the most of my days
                 off and was able to travel to 25 different countries. After my time in the United Kingdom, I was
@@ -79,15 +99,17 @@
                 going from living in Europe for so long and transitioning to the Southwest. Nonetheless, I made the most
                 of my time there as well. Originally from Charlotte, I seized the opportunity to explore the Southwest
                 and the West Coast while I was there.</p>
-                
-                <figure>
-                    <img src="images/white_sands.JPG" alt="A picture I took at White Sands National Park in New Mexico">
-                    <p>A picture I took at White Sands National Park in New Mexico</p>
-                </figure>
+
+            <figure>
+                <img src="images/white_sands.JPG" alt="A picture I took at White Sands National Park in New Mexico">
+                <p>A picture I took at White Sands National Park in New Mexico</p>
+            </figure>
         </section>
 
         <section id="best_times">
-            <h2>Best Times</h2>
+            <a id="best_times_link">
+                <h2>Best Times</h2>
+            </a>
             <p>Out of the 25 countries I've been to, I'd have to say that Australia was my favorite. I spent 3 weeks
                 exploring the East coast of Australia, all the way from Sydney, to Brisbane, even up to the Great
                 Barrier Reef.
@@ -111,7 +133,9 @@
         </section>
 
         <section id="how">
-            <h2>How</h2>
+            <a id="how_link">
+                <h2>How</h2>
+            </a>
             <p>Unlike the United States, plane tickets in Europe are, for the most part, extremely cheap. The cheapest
                 ticket I was able to purchase during my time in Europe was a $15 round-trip ticket from London to Paris.
                 Often times me and my friends would simply look for the cheapest place to fly to and buy tickets for a 3
@@ -126,7 +150,9 @@
         </section>
 
         <section id="why">
-            <h2>Why</h2>
+            <a id="why_link">
+                <h2>Why</h2>
+            </a>
             <p>I've always had a passion for going new places and experiencing different cultures, so it was very
                 exciting when I found out I would be living in the United Kingdom. Getting out and seeing the world and
                 meeting new people is truly an exhilerating feeling. If you ever get the chance to travel to a new
