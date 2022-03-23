@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <title>Captured Moments | Contact Us</title>
     <link href="project_styles/default.css" type="text/css" rel="stylesheet" />
-    <link rel="shortcut icon" type="image/png" href="project_images/camera_favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="project_images/camera_favicon.png" />
 </head>
 
 <body>
@@ -24,42 +24,49 @@
     </header>
     <br>
     <main>
+        
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have questions about our services and availability? Feel free to contact us!</p>
+                <form action="#">
 
-        <h2>Contact Us</h2>
+                    <label for="fname">First Name*</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
 
-        <p>Have questions about our services and availability? Feel Free to contact us!</p>
+                    <label for="lname">Last Name*</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
 
-        <ul>
-            <li>Email: capturedmoments@gmail.com</li>
-            <li>Phone: 505-555-0978</li>
-            <li>Facebook: Coming Soon!</li>
-            <li>Instagram: Coming Soon!</li>
-            <li>Twitter: Coming Soon!</li>
-        </ul>
+                    <label for="state">Subject*</label>
+                    <input type="text" id="subject" name="subject" placeholder="Subject.." required>
 
-        <form action="#">
-            <div class="form">
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea required>
 
-                <p>Sign Up For Our Newsletter!</p>
+                    <input type="submit" value="Submit">
 
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" size="20" placeholder="First Name" required><br>
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname" size="20" placeholder="Last Name" required><br>
-                <label for="phone">Phone number:</label><br>
-                <input type="text" id="phone" name="phone" size="15" placeholder="###-###-####" required><br>
-                <label for="email">Email address:</label><br>
-                <input type="text" id="email" name="email" size="30" placeholder="johndoe@gmail.com" required><br>
-                <br><br>
-                <input class="button" type="submit" value="Submit">
-                <input class="button" type="reset" value="Reset">
+                </form>
             </div>
-        </form>
-       
+
+            <br><br>
+
+
+            <div class="container">
+                <h2>Subscribe to our Newsletter</h2>
+                <p>Subscribe to stay informed on special offers we have!</p>
+                <form action="#">
+
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="text" placeholder="Email address" name="mail" required>
+
+                <input type="submit" value="Subscribe">
+            </form>
+            </div>
+
     </main>
     <br>
     <footer>
-       Captured Moments &copy;2022.
+        Captured Moments &copy;2022.
     </footer>
 </body>
 
