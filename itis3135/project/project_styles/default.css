@@ -18,8 +18,7 @@ figure {
 }
 
 h1,
-h2,
-h3 {
+h2 {
     font-family: Cambria, Cochin, Georgia, sans-serif;
     text-align: center;
 }
@@ -83,8 +82,4 @@ hr {
     font-size: 13px;
     margin: 4px 2px;
     cursor: pointer;
-}
-
-footer a {
-    text-decoration: none;
 }
