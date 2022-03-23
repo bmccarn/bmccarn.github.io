@@ -83,3 +83,13 @@ hr {
     margin: 4px 2px;
     cursor: pointer;
 }
+
+.form {
+    
+    font-family: sans-serif;
+    background-color: #b4b4b4;
+    border-style: solid;
+    margin-left: 30%;
+    margin-right: 30%;
+    padding: 10px;
+}
