@@ -172,20 +172,24 @@
                 scuba diving at the Great Barrier Reef while I was there.
                 These are a few pictures from my time there.
             </p>
-            <figure>
-                <img src="images/gold_coast.jpg" alt="A picture of the Gold Coast in Australia">
-                <p>A picture of the Gold Coast in Australia</p>
-            </figure>
-            <br>
-            <figure>
-                <img src="images/opera_house_night.jpg" alt="A picture of the famous Sydney Opera House">
-                <p>A picture of the famous Sydney Opera House</p>
-            </figure>
-            <br>
-            <figure>
-                <img src="images/australia_palms.jpg" alt="A picture of palm trees in Australia">
-                <p>Palm trees by the ocean</p>
-            </figure>
+
+
+
+            <div style="text-align: center;">
+
+                <ul style="display: none;" id="image_list">
+
+                    <li><a href="images/gold_coast.jpg" title="A picture of the Gold Coast in Australia"></a></li>
+                    <li><a href="images/opera_house_night.jpg" title="A picture of the famous Sydney Opera House"></a>
+                    </li>
+                    <li><a href="images/australia_palms.jpg" title="A picture of palm trees in Australia"></a></li>
+
+                </ul>
+
+                <p><img style="text-align: center;" id="main_image" src="images/gold_coast.jpg" alt="gold_coast"></p>
+                <h3 id="caption">A picture of the Gold Coast in Australia</h3>
+
+            </div>
         </section>
         <br>
         <a id="how_link">
@@ -245,6 +249,51 @@
         </form>
 
     </footer>
+
+    <script>
+        const $ = selector => document.querySelector(selector);
+
+        document.addEventListener("DOMContentLoaded", () => {
+
+            const caption = $("#caption"); //the h2 element for the caption
+            const mainImage = $("#main_image"); //the image element for the show
+
+            //get all the <a> tags in the ul element 
+            const links = $("#image_list").querySelectorAll("a");
+
+            //process the image links
+            const imageCache = [];
+            let image = null;
+
+            for (let link of links) {
+                //preload image and copy title properties
+                image = new Image();
+                image.src = link.href;
+                image.alt = link.title;
+
+                //add image to array
+                imageCache[imageCache.length] = image;
+            }
+
+            //start the slideshow
+            let imageCounter = 0;
+
+            setInterval(() => {
+                //calculate the index for the current image
+                imageCounter = (imageCounter + 1) % imageCache.length;
+
+                //get image object from array
+                image = imageCache[imageCounter];
+
+                //set HTML img and h2 elements with values from image object
+                mainImage.src = image.src;
+                mainImage.alt = image.alt;
+                caption.textContent = image.alt;
+            },
+                2000); //2 second interval
+
+        });
+    </script>
 </body>
 
 </html>
