@@ -1,19 +1,29 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html id="top" lang="en-US">
 
 <head>
     <meta charset="utf-8" />
     <title>Blake McCarn's Travels</title>
 
     <style>
+        * {
+            scroll-behavior: smooth;
+        }
+
         body,
         title {
             background-color: #d7b2378f;
-            margin-left: 150px;
-            margin-right: 150px;
+            margin: 0;
             color: #5c3600;
             font-family: sans-serif;
             font-size: large;
+
+        }
+
+        body p,
+        figure {
+            margin-left: 150px;
+            margin-right: 150px;
         }
 
         h1,
@@ -23,19 +33,12 @@
             text-align: center;
         }
 
-        .fixed-nav-bar {
-            position: fixed;
-            top: 15px;
-            left: 40%;
-            z-index: 9999;
-            width: 10;
-        }
-
         header {
-            font-family: 'Courier New', Courier, monospace;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size: large;
             font-weight: bold;
             text-align: center;
+            padding-bottom: 50px;
         }
 
         footer {
@@ -47,30 +50,82 @@
             margin-bottom: 50px;
 
         }
-  
-        
+
+        hr {
+            height: 2px;
+            background-color: #333;
+            margin-bottom: 50px;
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-color: #333;
+            margin: 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        /* Navbar links */
+        #navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            padding: 20px;
+            text-decoration: none;
+        }
+
+        #navbar a:hover {
+            color: #333;
+            background-color: #f2f2f2;
+
+        }
+
+        /* Page content */
+        .content {
+            padding: 16px;
+        }
+
+        /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+        .sticky+.content {
+            padding-top: 60px;
+        }
+
+        .button {
+            background-color: #333;
+            border-radius: 7px;
+            color: #f2f2f2;
+            padding: 5px 5px;
+            text-align: center;
+            display: inline-block;
+            font-size: 13px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        footer a {
+            text-decoration: none;
+        }
     </style>
 
-    <script type="text/javascript" src="jquery.js"></script>
+
 </head>
 
 <body>
-
-    
-
     <header>
-        <nav class="fixed-nav-bar">
-            <a href="#home_link">Home</a>
-            |
+        <div id="navbar">
+            <a href="#top">Home</a>
+
             <a href="#about_link">About Me</a>
-            |
+
             <a href="#best_times_link">Best Times</a>
-            |
+
             <a href="#how_link">How?</a>
-            |
+
             <a href="#why_link">Why?</a>
-        </nav>
+        </div>
     </header>
+    <br>
 
     <main>
 
@@ -87,11 +142,16 @@
                 <p>A picture of me in London.</p>
             </figure>
         </section>
+        <br>
+        <a id="about_link">
+            <br>
+            <hr>
+        </a>
+        <br>
+        <section>
 
-        <section id="about">
-            <a id="about_link">
-                <h2>About Me</h2>
-            </a>
+            <h2>About Me</h2>
+
             <p>In 2015 I joined the military and was lucky
                 enough to be stationed in the United Kingdom for 3 years. During that time I made the most of my days
                 off and was able to travel to 25 different countries. After my time in the United Kingdom, I was
@@ -105,11 +165,16 @@
                 <p>A picture I took at White Sands National Park in New Mexico</p>
             </figure>
         </section>
+        <br>
+        <a id="best_times_link">
+            <br>
+            <hr>
+        </a>
+        <br>
+        <section>
 
-        <section id="best_times">
-            <a id="best_times_link">
-                <h2>Best Times</h2>
-            </a>
+            <h2>Best Times</h2>
+
             <p>Out of the 25 countries I've been to, I'd have to say that Australia was my favorite. I spent 3 weeks
                 exploring the East coast of Australia, all the way from Sydney, to Brisbane, even up to the Great
                 Barrier Reef.
@@ -131,11 +196,16 @@
                 <p>Palm trees by the ocean</p>
             </figure>
         </section>
+        <br>
+        <a id="how_link">
+            <br>
+            <hr>
+        </a>
+        <br>
+        <section>
 
-        <section id="how">
-            <a id="how_link">
-                <h2>How</h2>
-            </a>
+            <h2>How</h2>
+
             <p>Unlike the United States, plane tickets in Europe are, for the most part, extremely cheap. The cheapest
                 ticket I was able to purchase during my time in Europe was a $15 round-trip ticket from London to Paris.
                 Often times me and my friends would simply look for the cheapest place to fly to and buy tickets for a 3
@@ -148,7 +218,12 @@
                 <p>A picture of the Eiffel Tower</p>
             </figure>
         </section>
-
+        <br>
+        <a id="why_link">
+            <br>
+            <hr>
+        </a>
+        <br>
         <section id="why">
             <a id="why_link">
                 <h2>Why</h2>
@@ -163,8 +238,21 @@
             <p>A picture of the Roman Colloseum</p>
         </figure>
     </main>
+    <br>
+    <footer>
 
+        &copy;2022.
 
+        <p>
+            <a href="https://validator.w3.org/check?uri=referer" target="_blank">
+                <input class="button" type="HTML Validation" value="HTML">
+            </a>
+    
+            <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                <input class="button" type="CSS Validation" value="CSS">
+            </a>
+        </p>
+    </footer>
 </body>
 
 </html>
