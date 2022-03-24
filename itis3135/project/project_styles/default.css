@@ -127,3 +127,11 @@ input[type=text], select, textarea {
   .container p {
       text-align: center;
   }
+
+  .row{clear:both}
+
+  .column{
+      width: 33%;
+      float: left;
+  }
+
