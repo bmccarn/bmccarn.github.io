@@ -15,7 +15,6 @@ header {
     text-align: center;
     background-color: #e1eedd;
     padding-bottom: 5px;
-
 }
 
 nav {
@@ -32,13 +31,11 @@ footer {
     margin-top: 50px;
     margin-bottom: 50px;
     padding-bottom: 5px;
-
 }
 
 h1, h2, h3 {
     font-family: Cambria, Cochin, Georgia, sans-serif;
     text-align: center;
-
 }
 
 header nav {
