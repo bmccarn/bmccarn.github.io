@@ -5,10 +5,54 @@
     <meta charset="utf-8" />
     <title>Blake McCarn || ITIS3135 || Bronze Meerkat || Slideshow</title>
     <link href="styles/default.css" type="text/css" rel="stylesheet" />
-    <script src="scripts/slideshow.js"></script>
+    <script type="text/javascript" src="scripts/jquery-3.6.0.js"></script>
+    <script type="text/javascript" src="scripts/slideshow.js"></script>
     <link rel="shortcut icon" type="image/png" href="images/meerkat_favicon.png" />
     <style>
-       
+        .container {
+            width: 540px;
+            margin: 40px auto;
+            overflow: auto;
+        }
+
+        .slider-inner {
+            width: 500px;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            float: left;
+            padding: 3px;
+            border: #666 solid 1px;
+        }
+
+        .slider-inner img {
+            display: none;
+            width: 500px;
+            height: 300px;
+        }
+
+        .slider-inner img.active {
+            display: inline-block;
+        }
+
+        .prev,
+        .next {
+            float: left;
+            margin-top: 130px;
+            cursor: pointer;
+        }
+
+        .prev {
+            position: relative;
+            margin-right: -45px;
+            z-index: 100;
+        }
+
+        .next {
+            position: relative;
+            margin-left: -45px;
+            z-index: 100;
+        }
     </style>
 </head>
 
@@ -18,20 +62,21 @@
     <main style="text-align: center;">
         <h2>Meerkat Slideshow</h2>
 
-        <ul style="display: none;" id="image_list">
+        <div class="container">
+            <div class="slider-outer">
+                <img src="images/arrow-left.png" class="prev" alt="Prev">
+                <div class="slider-inner">
+                    <img src="images/meerkat_1.jpg" class="active">
+                    <img src="images/meerkat_2.jpg">
+                    <img src="images/meerkat_3.jpg">
+                    <img src="images/meerkat_4.jpg">
+                    <img src="images/meerkat_5.jpg">
+                    <img src="images/meerkat_6.jpg">
+                </div>
+                <img src="images/arrow-right.png" class="next" alt="Next">
+            </div>
+        </div>
 
-            <li><a href="images/meerkat_1.jpg" title="A meerkat prom picture"></a></li>
-            <li><a href="images/meerkat_2.jpg" title="Meerkats Looking out of a hole"></a></li>
-            <li><a href="images/meerkat_3.jpg" title="The three musketeers: Meerkat Edition"></a></li>
-            <li><a href="images/meerkat_4.jpg" title="This is a meerkat in a hole"></a></li>
-            <li><a href="images/meerkat_5.jpg" title="This is a meerkat on a log"></a></li>
-            <li><a href="images/meerkat_6.jpg" title="This is a meerkat who is very confused"></a></li>
-
-        </ul>
-
-        <p><img style="text-align: center;" id="main_image" src="images/meerkat_1.jpg" alt="Meerkat 1"></p>
-        <h2 id="caption">A meerkat prom picture</h2>
-        
 
     </main>
     <div data-include="components/footer.html"></div>
