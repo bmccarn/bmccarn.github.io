@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $("#slider").bxSlider({
         auto: true,
         minSlides: 1,
