@@ -3,8 +3,9 @@ $(document).ready(function () {
     $('#accordion').accordion({
 
         active: false,
-
-        collapsible: true
+        collapsible: true,
+        heightStyle: 'panel'
 
     });
 });
+
