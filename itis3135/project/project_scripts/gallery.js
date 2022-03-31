@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     //start the slideshow
     let imageCounter = 0;
 
-    setInterval( () => {
+    setInterval(() => {
         //calculate the index for the current image
         imageCounter = (imageCounter + 1) % imageCache.length;
 
@@ -37,6 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
         mainImage.alt = image.alt;
         caption.textContent = image.alt;
     },
-    2000); //2 second interval
+        2000); //2 second interval
 
 });
