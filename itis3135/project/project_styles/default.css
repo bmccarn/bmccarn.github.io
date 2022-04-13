@@ -18,7 +18,8 @@ figure {
 }
 
 h1,
-h2 {
+h2,
+h4 {
     font-family: Cambria, Cochin, Georgia, sans-serif;
     text-align: center;
 }
