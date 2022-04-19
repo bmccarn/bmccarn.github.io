@@ -5,7 +5,12 @@
     <meta charset="utf-8" />
     <title>Captured Moments | Prices</title>
     <link href="project_styles/default.css" type="text/css" rel="stylesheet" />
+    <link href="project_styles/date_picker.css" type="text/css" rel="stylesheet" />
+    <link href="project_styles/normalize.css" type="text/css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/png" href="project_images/camera_favicon.png" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="project_scripts/date_picker.js"></script>
 </head>
 
 <body>
@@ -62,6 +67,30 @@
                     <li>$750</li>
                 </ul>
             </div>
+        </div>
+        <br><br>
+        <div class="container">
+            <h2>Schedule Your Session Below!</h2>
+            <p>Please be sure to add specific requests/locations in the notes section.</p>
+            <form action="#">
+
+
+                <select name="occasion" id="occasion">
+                    <option value="" disabled selected>Select an Occasion</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="senior_pictures">Senior Pictures</option>
+                    <option value="portrait">Portrait Session</option>
+                    <option value="family">Family Photos</option>
+                    <option value="gender_reveal">Gender Reveal</option>
+                    <option value="other">Other</option>
+                </select>
+                <br><br>
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="text" placeholder="Email address" name="mail" required>
+                <input type="text" placeholder="Select a date" id="datepicker">
+                <textarea id="subject" name="subject" placeholder="Additional notes..." style="height:200px"></textarea required>
+                <input type="submit" value="Schedule Now!">
+            </form>
         </div>
 
     </main>
