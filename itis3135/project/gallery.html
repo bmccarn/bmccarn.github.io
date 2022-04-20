@@ -3,14 +3,18 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>Captured Moments | Image Gallery</title>
+    <title>Captured Moments | About Us</title>
     <link href="project_styles/default.css" type="text/css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/png" href="project_images/camera_favicon.png" />
-    <script src="project_scripts/gallery.js"></script>
-    <script src="//code.jquery.com/jquery.min.js"></script>
-    <script src="project_scripts/flex-gallery.js"></script>
-    <script src="project_scripts/flex_gallery_setup.js"></script>
-    <link rel="stylesheet" href="project_styles/flex-gallery.css">
+
+    <!-- Using jQuery -->
+    <script type="text/javascript" src="project_scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="project_scripts/dynamics.min.js"></script>
+
+    <!-- Imports flex-gallery sources -->
+    <script type="text/javascript" src="project_scripts/flex-gallery.js"></script>
+    <script type="text/javascript" src="project_scripts/flex_gallery_setup.js"></script>
+    <link rel="stylesheet" type="text/css" href="project_styles/flex-gallery.css">
 </head>
 
 <body>
@@ -28,37 +32,17 @@
         </div>
     </header>
     <br>
-    <main style="text-align: center;">
-        <h2>Image Gallery</h2>
+    <main>
 
-        <ul style="display: none;" id="image_list">
+        <h1 style="text-align: center;">Photo Gallery</h1>
 
-            <li><a href="project_images/gallery1.jpg"
-                    title="Interested in prints? Contact us for more information!"></a></li>
-            <li><a href="project_images/gallery2.jpg"
-                    title="Interested in prints? Contact us for more information!"></a></li>
-            <li><a href="project_images/gallery3.jpg"
-                    title="Interested in prints? Contact us for more information!"></a></li>
-            <li><a href="project_images/gallery4.jpg"
-                    title="Interested in prints? Contact us for more information!"></a></li>
-            <li><a href="project_images/gallery5.jpg"
-                    title="Interested in prints? Contact us for more information!"></a></li>
-            <li><a href="project_images/gallery6.jpg"
-                    title="Interested in prints? Contact us for more information!"></a></li>
-            <li><a href="project_images/gallery7.jpg"
-                    title="Interested in prints? Contact us for more information!"></a></li>
+        <div id="container"></div>
 
-        </ul>
-
-        <p><img style="text-align: center;" id="main_image" src="project_images/gallery1.jpg"></p>
-        <h2 id="caption">Interested in prints? Contact us for more information!</h2>
-
-        <div id="flex_gallery"></div>
-
-        <br>
-        <footer>
-            Captured Moments &copy;2022.
-        </footer>
+    </main>
+    <br>
+    <footer>
+        Captured Moments &copy;2022.
+    </footer>
 </body>
 
 </html>

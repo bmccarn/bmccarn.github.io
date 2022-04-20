@@ -11,7 +11,7 @@ var autoAdjusted = false;
      * @param {Object} options - the custom arguments
      * @return {jQuery}
      */
-    $.fn.flexGallery = function(options) {
+    $.fn.flexGallery = function (options) {
         /**
          * Default options for the flex gallery.
          */
@@ -20,7 +20,7 @@ var autoAdjusted = false;
             minHeightRatioWindow: null,
             minHeightRatioScreen: null,
             fadeInDuration: 1000,
-            checkPeriod: 100, 
+            checkPeriod: 100,
             autoAdjust: true
         }, options);
         /**
@@ -29,20 +29,20 @@ var autoAdjusted = false;
          * If no ratios are defined, it takes 0.25 window height in default.
          * If both ratios are defined, the smaller computed height will be applied.
          */
-        if(!settings.minHeightRatioWindow && !settings.minHeightRatioScreen)
+        if (!settings.minHeightRatioWindow && !settings.minHeightRatioScreen)
             settings.minHeightRatioWindow = 0.25;
         let minHeightWindow = minHeightScreen = Number.MAX_SAFE_INTEGER;
-        if(settings.minHeightRatioWindow)
+        if (settings.minHeightRatioWindow)
             minHeightWindow = window.innerHeight * settings.minHeightRatioWindow;
-        if(settings.minHeightRatioScreen)
+        if (settings.minHeightRatioScreen)
             minHeightScreen = screen.height * settings.minHeightRatioScreen;
         let minHeight = Math.min(minHeightWindow, minHeightScreen);
         /**
          * Listen on window size change.
          */
-        if(!autoAdjusted && settings.autoAdjust) {
+        if (!autoAdjusted && settings.autoAdjust) {
             $(window).on('resize', () => {
-                if(settings.minHeightRatioWindow)
+                if (settings.minHeightRatioWindow)
                     minHeightWindow = window.innerHeight * settings.minHeightRatioWindow;
                 minHeight = Math.min(minHeightWindow, minHeightScreen);
                 $('.flex-gallery-a').each((index, element) => {
@@ -60,13 +60,13 @@ var autoAdjusted = false;
             $(fgContainer).find(".fg-item")
                 .css('margin', settings.margin)
                 .each((index, fgItem) => {
-                   /**
-                    * Checks sizes of every images being loading
-                    * so that we are able to set up the sizes of <a>s in advance.
-                    * Otherwise, the screen will flickers due to the images loaded early or late.
-                    *
-                    * However, naturalWidth and naturalHeight do not work in IE8 or below
-                    */
+                    /**
+                     * Checks sizes of every images being loading
+                     * so that we are able to set up the sizes of <a>s in advance.
+                     * Otherwise, the screen will flickers due to the images loaded early or late.
+                     *
+                     * However, naturalWidth and naturalHeight do not work in IE8 or below
+                     */
                     $(fgItem).find(".fg-img")
                         .css("display", "none")
                         .on('load', (e) => {
@@ -117,18 +117,18 @@ var autoAdjusted = false;
      * In `media`, `images` is required while `links` not. They are both Arrays.
      * The hyperlink will be set as the image url if `links` is not given.
      */
-    $.fn.addFlexImages = function(media, shuffling=false) {
-        if(!media.images)
+    $.fn.addFlexImages = function (media, shuffling = false) {
+        if (!media.images)
             throw "Error: images not found.";
-        if(media.links && media.images.length != media.links.length)
+        if (media.links && media.images.length != media.links.length)
             throw "Error: # of images and # of links are not the same.";
         /**
          * Clone the image array.
          */
         let images = links = media.images.slice(), texts;
-        if(media.links)
+        if (media.links)
             links = media.links.slice();
-        if(media.texts)
+        if (media.texts)
             texts = media.texts.slice();
         else
             texts = Array(images.length).fill("");
@@ -137,7 +137,7 @@ var autoAdjusted = false;
          */
         return this.each(() => {
             let indices;
-            if(shuffling) {
+            if (shuffling) {
                 /**
                  * Get a randomly permutated indices.
                  */
@@ -159,17 +159,17 @@ var autoAdjusted = false;
                     $("<div>").addClass("fg-item").append(
                         $("<a>").attr("href", links[index]).append(
                             $("<img>").addClass("fg-img")
-                                      .attr("fg-img-src", images[index])  //** this image is a thumbnail
+                                .attr("fg-img-src", images[index])  //** this image is a thumbnail
                         )
                     ).append(
                         $("<span>").addClass("fg-text")
-                                   .text(texts[index])
+                            .text(texts[index])
                     )
                 );
             });
         });
     };
-}) (jQuery);
+})(jQuery);
 
 /**
  * Swaps elements in an array randomly.
@@ -178,7 +178,7 @@ var autoAdjusted = false;
  * @return {None}
  */
 function shuffle(array) {
-    for(let i in array) {
+    for (let i in array) {
         let j = Math.floor(Math.random() * array.length);
         [array[i], array[j]] = [array[j], array[i]];
     }
@@ -265,7 +265,7 @@ function hideText(fgItem) {
             /**
              * Make the background white after the image is not transparent.
              */
-            complete: function() {
+            complete: function () {
                 $(fgItem).each((index, element) => {
                     dynamics.css(element, {
                         background: 'white'
@@ -297,21 +297,21 @@ function parseUnit(unit, parentValue) {
     // 16px == 12pt == 1em == 1rem (== 100%)
     unit = unit.trim();
     let multiplier = 1;
-    if(isNumber(unit)) {
+    if (isNumber(unit)) {
         multiplier = parentValue;
-    } else if(unit.endsWith('px')) {
+    } else if (unit.endsWith('px')) {
         multiplier = 1;
         unit = unit.replace('px', '');
-    } else if(unit.endsWith('pt')) {
+    } else if (unit.endsWith('pt')) {
         multiplier = 4.0 / 3.0;
         unit = unit.replace('pt', '');
-    } else if(unit.endsWith('em')) {
+    } else if (unit.endsWith('em')) {
         multiplier = 16;
         unit = unit.replace('em', '');
-    } else if(unit.endsWith('rem')) {
+    } else if (unit.endsWith('rem')) {
         multiplier = 16;
         unit = unit.replace('rem', '');
-    } else if(unit.endsWith('%', '')) {
+    } else if (unit.endsWith('%', '')) {
         multiplier = parentValue / 100.0;
         unit = unit.replace('%', '')
     }
