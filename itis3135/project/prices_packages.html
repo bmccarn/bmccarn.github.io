@@ -11,6 +11,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script type="text/javascript" src="project_scripts/date_picker.js"></script>
+    <script type="text/javascript" src="project_scripts/submit_message.js"></script>
 </head>
 
 <body>
@@ -95,7 +96,7 @@
                 <input type="text" placeholder="Email address" name="mail" required>
                 <input type="text" placeholder="Select a date" id="datepicker">
                 <textarea id="subject" name="subject" placeholder="Additional notes..." style="height:200px"></textarea required>
-                <input type="submit" value="Schedule Now!">
+                <input onclick="scheduleMessage()" type="submit" value="Schedule Now!">
             </form>
         </div>
 

@@ -6,6 +6,8 @@
     <title>Captured Moments | Contact Us</title>
     <link href="project_styles/default.css" type="text/css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/png" href="project_images/camera_favicon.png" />
+    <script type="text/javascript" src="project_scripts/submit_message.js"></script>
+
 </head>
 
 <body>
@@ -31,7 +33,7 @@
             <form action="#">
 
                 <label for="fname">First Name*</label>
-                <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                <input id="contact_fname" type="text" id="fname" name="firstname" placeholder="Your name.." required>
 
                 <label for="lname">Last Name*</label>
                 <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
@@ -42,7 +44,7 @@
                 <label for="subject">Message</label>
                 <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea required>
 
-                    <input type="submit" value="Submit">
+                    <input type="submit" onclick="contactUsMessage();" value="Submit">
 
                 </form>
             </div>
@@ -58,7 +60,7 @@
                 <input type="text" placeholder="Name" name="name" required>
                 <input type="text" placeholder="Email address" name="mail" required>
 
-                <input type="submit" value="Subscribe">
+                <input onclick="newsLetterMessage()" type="submit" value="Subscribe">
             </form>
             </div>
 
