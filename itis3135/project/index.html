@@ -3,12 +3,51 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Captured Moments | Homepage</title>
     <link href="project_styles/default.css" type="text/css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/png" href="project_images/camera_favicon.png" />
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bg {
+            position: relative;
+            opacity: 0.70;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bg {
+            background-image: url(project_images/white_sands_nocrop.jpg);
+            height: 100%;
+        }
+
+        .caption {
+            position: absolute;
+            left: 0;
+            top: 15%;
+            width: 100%;
+            text-align: center;
+            color: #000;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .caption span.title {
+            font-size: 60px;
+            letter-spacing: 10px;
+            color: #000;
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 <body>
+
     <header>
         <div id="navbar">
             <a href="./">Home</a>
@@ -22,13 +61,21 @@
             <a href="prices_packages.html">Prices and Packages</a>
         </div>
     </header>
-    <br>
+    <div class="bg">
+        <div class="caption">
+            <span class="title">Captured Moments</span><br><br>
+            <span class="title" style="font-style: italic;">Photography</span>
+        </div>
+    </div>
+
     <main>
 
-        <h2>Captured Moments</h2>
+
+
+        <!-- <h2>Captured Moments</h2>
         <h3 style="text-align: center; font-style: italic;">Photography</h3>
 
-        <figure style="text-align: center;">
+        <!-- <figure style="text-align: center;">
             <img src="project_images/white_sands.jpg" alt="White Sands National Park">
         </figure>
         <br><br>
@@ -43,11 +90,14 @@
             delivering high quality images that you can look back on years from now. Don't let these special moments
             slip away!</p>
 
+
+-->
     </main>
-    <br>
+    <!-- <br>
     <footer>
         Captured Moments &copy;2022.
     </footer>
+    -->
 </body>
 
 </html>
