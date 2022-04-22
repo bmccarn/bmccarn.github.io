@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8" />
     <title>Captured Moments | Prices</title>
-    <link href="project_styles/default.css" type="text/css" rel="stylesheet" />
+
 
     <!--CSS to style the date picker-->
     <link href="project_styles/date_picker.css" type="text/css" rel="stylesheet" />
     <link href="project_styles/normalize.css" type="text/css" rel="stylesheet" />
-
+    <link href="project_styles/default.css" type="text/css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/png" href="project_images/camera_favicon.png" />
 
     <!--Using jQuery-->
@@ -18,6 +18,7 @@
     <script type="text/javascript" src="project_scripts/date_picker.js"></script>
 
     <script type="text/javascript" src="project_scripts/submit_message.js"></script>
+
 </head>
 
 <body>
@@ -81,7 +82,6 @@
             <p>Please be sure to add specific requests/locations in the notes section.</p>
             <form action="#">
 
-
                 <select name="occasion" id="occasion">
                     <option value="" disabled selected>Select an Occasion</option>
                     <option value="wedding">Wedding</option>
@@ -90,14 +90,14 @@
                     <option value="family">Family Photos</option>
                     <option value="other">Other</option>
                 </select>
-                <br><br>
+
                 <select name="package" id="package">
                     <option value="" disabled selected>Select a Package</option>
                     <option value="gold">Gold Package</option>
                     <option value="silver">Silver Package</option>
                     <option value="bronze">Bronze Package</option>
                 </select>
-                <br><br>
+
                 <input type="text" placeholder="Name" name="name" required>
                 <input type="text" placeholder="Email address" name="mail" required>
                 <input type="text" placeholder="Select a date" id="datepicker">
