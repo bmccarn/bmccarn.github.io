@@ -6,18 +6,24 @@
     <title>Captured Moments | Prices</title>
 
 
-    <!--CSS to style the date picker-->
+    <!--
+        CSS to style the date picker
+        *Note: There are CSS errors in the imported CSS, I did not write
+        this CSS code. It enables the Date Picker to format correctly so I
+        left the errors there.
+    -->
     <link href="project_styles/date_picker.css" type="text/css" rel="stylesheet" />
     <link href="project_styles/normalize.css" type="text/css" rel="stylesheet" />
+
+    <!--My personal CSS-->
     <link href="project_styles/default.css" type="text/css" rel="stylesheet" />
     <link rel="shortcut icon" type="image/png" href="project_images/camera_favicon.png" />
 
     <!--Using jQuery-->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
-    <script type="text/javascript" src="project_scripts/date_picker.js"></script>
-
-    <script type="text/javascript" src="project_scripts/submit_message.js"></script>
+    <script src="project_scripts/date_picker.js"></script>
+    <script src="project_scripts/submit_message.js"></script>
 
 </head>
 
@@ -101,7 +107,8 @@
                 <input type="text" placeholder="Name" name="name" required>
                 <input type="text" placeholder="Email address" name="mail" required>
                 <input type="text" placeholder="Select a date" id="datepicker">
-                <textarea id="subject" name="subject" placeholder="Additional notes..." style="height:200px"></textarea required>
+                <textarea id="subject" name="subject" placeholder="Additional notes..." style="height:200px"
+                    required></textarea>
                 <input onclick="scheduleMessage()" type="submit" value="Schedule Now!">
             </form>
         </div>
