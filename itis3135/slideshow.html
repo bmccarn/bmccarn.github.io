@@ -5,16 +5,66 @@
     <meta charset="utf-8" />
     <title>Blake McCarn || ITIS3135 || Bronze Meerkat || Slideshow</title>
     <link href="styles/default.css" type="text/css" rel="stylesheet" />
-    <link href="styles/slideshow.css" type="text/css" rel="stylesheet" />
+
     <script src="scripts/jquery-3.6.0.js"></script>
     <script src="scripts/slideshow.js"></script>
     <link rel="shortcut icon" type="image/png" href="images/meerkat_favicon.png" />
+    <style>
+        .container {
+            width: 540px;
+            margin: 40px auto;
+            overflow: auto;
+        }
+
+        .slider-inner {
+            width: 500px;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            float: left;
+            padding: 3px;
+            border: #666 solid 1px;
+        }
+
+        .slider-inner img {
+            display: none;
+            width: 500px;
+            height: 300px;
+        }
+
+        .slider-inner img.active {
+            display: inline-block;
+        }
+
+        .prev,
+        .next {
+            float: left;
+            margin-top: 130px;
+            cursor: pointer;
+        }
+
+        .prev {
+            position: relative;
+            margin-right: -45px;
+            z-index: 100;
+        }
+
+        .next {
+            position: relative;
+            margin-left: -45px;
+            z-index: 100;
+        }
+
+        main {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
     <div data-include="components/header.html"></div>
 
-    <main style="text-align: center;">
+    <main>
         <h2>Meerkat Slideshow</h2>
 
         <div class="container">
